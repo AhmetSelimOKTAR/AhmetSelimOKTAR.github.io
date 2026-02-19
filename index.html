@@ -3,44 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmet Selim Oktar - Portfolyo</title>
+    <title>Ahmet Selim Oktar - Portfolyo & CV</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 40px; line-height: 1.6; color: #333; }
-        h1 { color: #004080; border-bottom: 2px solid #004080; padding-bottom: 10px; }
-        .container { max-width: 800px; margin: auto; }
-        .project { margin-bottom: 20px; padding: 15px; border-left: 5px solid #004080; background: #f4f4f4; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 0;
+            line-height: 1.6; 
+            color: #333; 
+            background-color: #f9f9f9;
+        }
+        .container { 
+            max-width: 900px; 
+            margin: 40px auto; 
+            background: #fff;
+            padding: 30px 40px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 { color: #004080; margin-bottom: 5px; }
+        h2 { color: #555; font-size: 1.2em; margin-top: 0; }
+        h3 { color: #004080; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 30px; }
+        .contact-info a { color: #004080; text-decoration: none; margin: 0 10px; font-weight: bold;}
+        .contact-info a:hover { text-decoration: underline; }
+        .section-content { margin-bottom: 20px; }
+        .job, .project { margin-bottom: 20px; padding: 15px; border-left: 4px solid #004080; background: #f4f8fb; }
+        .job h4, .project h4 { margin: 0 0 5px 0; color: #333; }
+        .date { font-size: 0.9em; color: #666; font-style: italic; margin-bottom: 10px; display: block;}
+        ul { margin-top: 5px; padding-left: 20px; }
+        .skills span { 
+            display: inline-block; background: #004080; color: #fff; 
+            padding: 5px 10px; margin: 5px 5px 0 0; border-radius: 4px; font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>Ahmet Selim Oktar</h1>
-        <h2>Elektrik-Elektronik Mühendisliği Öğrencisi</h2>
-        <p>Merhaba, kişisel portfolyo sayfama hoş geldiniz. Tasarım, analiz ve ağ sistemleri üzerine yaptığım çalışmaların bir özetini aşağıda bulabilirsiniz.</p>
+        <header>
+            <h1>Ahmet Selim Oktar</h1>
+            <h2>Elektrik-Elektronik Mühendisliği Öğrencisi</h2>
+            <div class="contact-info">
+                <a href="mailto:selimvahmet@gmail.com">selimvahmet@gmail.com</a> | 
+                <a href="https://www.linkedin.com/in/ahmet-selim-oktar-817510354" target="_blank">LinkedIn Profilim</a>
+            </div>
+            <p style="margin-top: 20px; text-align: justify;">
+                İnsansız hava araçları tasarımı, kontrol sistemleri ve bilgisayar destekli tasarım (CAD) konularında uzmanlaşmış bir mühendis adayıyım. Teorik bilgiyi, pratik projeler ve endüstriyel staj tecrübeleriyle birleştirerek yenilikçi çözümler üretmeyi hedefliyorum.
+            </p>
+        </header>
 
-        <h3>Öne Çıkan Çalışmalarım</h3>
+        <h3>İş Tecrübesi</h3>
+        <div class="section-content">
+            <div class="job">
+                <h4>Bilgi Sistemleri A.Ş.</h4>
+                <span class="date">Aday Mühendis (İYMEP Kapsamında) | Devam Ediyor</span>
+                <p>İş Yeri Mesleki Eğitim Programı (İYMEP) kapsamında aday mühendis olarak görev almaktayım.</p>
+            </div>
 
-        <div class="project">
-            <h4>Otonom Quadcopter Tasarımı</h4>
-            <p>Karbon fiber materyaller kullanılarak hafif, yüksek manevra kabiliyetine ve faydalı yük kapasitesine sahip İHA tasarımı (Fusion 360 / AutoCAD).</p>
+            <div class="job">
+                <h4>THY Teknik (Türkiş Teknik)</h4>
+                <span class="date">Stajyer Mühendis - Kabin İçi Başkanlığı, IFE ve Medya Müdürlüğü | 08/2025 - 09/2025</span>
+                <p>Uçak içi eğlence sistemlerinin (IFE) işleyişi, kontrolü ve bakımı süreçlerinde laboratuvar ve uçak ortamında aktif uygulamalara katıldım.</p>
+            </div>
         </div>
 
-        <div class="project">
-            <h4>Ağ Altyapısı Yapılandırmaları</h4>
-            <p>Cisco, HPE ve Aruba cihazları üzerinde anahtarlama, VLAN, Subnetting ve CLI komutları ile ağ topolojisi kurulumları.</p>
-        </div>
+        <h3>Projeler ve Çalışmalar</h3>
+        <div class="section-content">
+            <div class="project">
+                <h4>Hafif Siklet Yüksek Taşıma Kapasiteli Quadcopter (Teknofest)</h4>
+                <p>Maksimum 4kg ağırlığında, optimize edilmiş ve yüksek manevra kabiliyetine sahip İHA üretimi.</p>
+                <ul>
+                    <li><strong>Yazılım & Kontrol:</strong> Ubuntu 22.04 üzerinde PX4 ve QCS sistemlerinin kullanımı. jmavsim ve "Software in the loop" ile simülasyon ve uçuş testleri (Otonom 8 çizdirme vb.).</li>
+                    <li><strong>Mekanik Tasarım:</strong> Fusion 360 ve AutoCAD kullanılarak karbon fiber gövde tasarımı.</li>
+                </ul>
+            </div>
 
-        <div class="project">
-            <h4>Sayısal Analiz ve Simülasyon</h4>
-            <p>MATLAB kullanılarak Bisection, Newton-Raphson, Lagrange ve sonlu farklar yöntemleri ile matematiksel modelleme ve problem çözümü.</p>
+            <div class="project">
+                <h4>MATLAB & Simulink ile Modelleme ve Simülasyonlar</h4>
+                <ul>
+                    <li><strong>Bulanık (Fuzzy) Kontrol:</strong> Tank içindeki su seviyesinin Fuzzy Inference System ile kontrol edilmesi ve Simulink ortamında test edilmesi.</li>
+                    <li><strong>Trilaterasyon ve GPS Simülasyonu:</strong> Sistemin gürültüye (Noise) ve saat hatalarına (Clock Bias) karşı dayanıklılığını analiz etmek için Monte Carlo simülasyonu tasarımı.</li>
+                    <li><strong>Pil Deşarjı Modellemesi:</strong> FTCS metodu kullanılarak pil deşarjının difüzyon tabanlı modellemesi ve Uzay-Zaman Izgarası (Space-Time Grid) analizi.</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h4>Bilgisayar Destekli Tasarım (CAD)</h4>
+                <p>AutoCAD ile izometrik çizimlerden teknik çizime dönüştürme (Mimari planlar) ve 3D modelleme süreçleri (Örn: 3D yer lambası tasarımı).</p>
+            </div>
+            
+            <div class="project">
+                <h4>Ağ Altyapısı Yapılandırmaları</h4>
+                <p>Cisco, HPE ve Aruba cihazları üzerinde CLI komutları, anahtarlama (Switching), VLAN ve Subnetting yapılandırmaları ile ağ topolojisi kurulumları.</p>
+            </div>
         </div>
 
         <h3>Eğitim</h3>
-        <ul>
-            <li>İstanbul Sabahattin Zaim Üniversitesi - Elektrik ve Elektronik Mühendisliği</li>
-            <li>TEI Havacılık Akademisi (TEI 101)</li>
-        </ul>
+        <div class="section-content">
+            <ul>
+                <li><strong>İstanbul Sabahattin Zaim Üniversitesi</strong> - Elektrik-Elektronik Mühendisliği (%30 İngilizce) <br> <span class="date">09/2021 - 2026 | AGNO: 3.29/4.00</span></li>
+                <li><strong>TEI Havacılık Akademisi</strong> - TEI 101 Programı</li>
+            </ul>
+        </div>
 
-        <p><strong>İletişim:</strong> <a href="#">LinkedIn Profilim</a> | <a href="#">ahmet@ornek.com</a></p>
+        <h3>Yetenekler ve Sertifikalar</h3>
+        <div class="section-content">
+            <div class="skills" style="margin-bottom: 15px;">
+                <span>AutoCAD</span>
+                <span>Fusion 360</span>
+                <span>MATLAB & Simulink</span>
+                <span>Python (OpenCV)</span>
+                <span>C / C++</span>
+                <span>PX4 / QGroundControl</span>
+                <span>Ağ Sistemleri (Cisco/Aruba)</span>
+            </div>
+            <ul>
+                <li><strong>Yabancı Dil:</strong> İngilizce (B2)</li>
+                <li><strong>Sertifikalar:</strong> AutoCAD (Udemy), Python (Bilgeiş), Temel Elektronik (Bilgeiş)</li>
+                <li><strong>İlgi Alanları:</strong> Görüntü İşleme, Amatör Lehimleme, Otonom Sistemler</li>
+            </ul>
+        </div>
+
     </div>
 </body>
 </html>
